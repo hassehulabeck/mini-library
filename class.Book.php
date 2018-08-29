@@ -20,6 +20,16 @@ class Book {
     fclose($fileHandle);
   }
 
+  public function getStorage() {
+    $fileHandle = fopen("library.txt", "r");
+    $storage = array();
+    while(!feof($fileHandle)) {
+      $storage[] = unserialize(fgets($fileHandle));
+    }
+    fclose($fileHandle);
+    return $storage;
+  }
+
   public function getter() {
     $string = "";
     foreach ($this as $key => $value) {
