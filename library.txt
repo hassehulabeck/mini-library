@@ -1,0 +1,2 @@
+O:4:"Book":5:{s:5:"title";s:9:"Moby Dick";s:6:"author";s:11:"Melville, H";s:4:"year";s:4:"1833";s:5:"color";s:5:"White";s:6:"signum";s:3:"Hce";}
+O:4:"Book":5:{s:5:"title";s:7:"Stormen";s:6:"author";s:11:"Shakespeare";s:4:"year";s:4:"1634";s:5:"color";s:3:"Red";s:6:"signum";s:2:"Li";}

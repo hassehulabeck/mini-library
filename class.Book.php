@@ -15,12 +15,7 @@ class Book {
 
   public function storeBook() {
     $fileHandle = fopen("library.txt", "a+");
-    $writeString = "";
-    foreach ($this as $key => $value) {
-      $writeString .= $value . ", ";
-    }
-    trim($writeString, ", ");
-    $writeString .= PHP_EOL;
+    $writeString = serialize($this) . PHP_EOL;
     fwrite($fileHandle, $writeString);
     fclose($fileHandle);
   }
